@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
   <meta charset="utf-8">
   <title>Freundeskreis der Dorfkirche Alt-Staaken</title>
+  <meta description="Homepage des Freundeskreises der Dorfkirche Alt-Staaken." />
+  <link href="./resources/css/normalize.css" rel="stylesheet" />
   <link href="./resources/css/style.css" rel="stylesheet" />
 </head>
 
@@ -14,7 +16,7 @@
       <span>Freundeskreis der Dorfkirche Alt-Staaken e.V.</span>
     </div>
     <nav>
-      <a href="#">Dorfkiche</a>
+      <a href="#">Dorfkirche</a>
       <a href="#">Termine</a>
       <a href="#">Publikationen</a>
       <a href="#">Freundeskreis</a>
@@ -22,38 +24,66 @@
   </header>
   <main>
     <section class="willkommen flex">
-      <img src="./resources/images/kirche2.jpeg" alt="" />
+      <div class="img-box">
+        <img src="./resources/images/kirche2.jpeg" alt="" />
+      </div>
       <div class="txt-box">
-        <h1>Willkommen an unserer Dorfkirche Alt-Staaken</h1>
+        <h1>Willkommen an der Dorfkirche Alt-Staaken</h1>
         <p>
           Ein Ort, der 39 Jahre lang an der innerdeutschen Demarkationslinie lag, lädt zum Verweilen, Erinnern und Nachdenken ein.
         </p>
       </div>
     </section>
-    <section class="konzerte">
+    <section class="aktuell">
       <h2>Aktuelles</h2>
       <h3>Unser nächstes Dorfkirchenkonzert</h3>
       <article class="konzert">
-        <h4>Flötentöne</h4>
-        <p>Donnerstag, 18. Mai 2017 um 19:00 Uhr mit Werken von Corelli, Vivaldi, Weber, Friedrich dem Großen, u.a. Geritt Fröhlich Flöte Prof. Alexander Vitlin Klavier H.-J. Scheitzbach Moderation und Violoncello ab 18:00 Uhr Maibowle und ein kleines Buffet
-          zum Saisonende
-        </p>
+        <div class="termin">
+          <div class="wochentag">Donnerstag</div>
+          <div class="datum-tag">18</div>
+          <div class="datum-monat-jahr">Mai 2017</div>
+          <div class="zeit">19:00 Uhr</div>
+        </div>
+        <div class="txt-box">
+          <h4>Flötentöne</h4>
+          <h5>mit Werken von Corelli, Vivaldi, Weber, Friedrich dem Großen, u.a.</h5>
+          <table class="interpreten">
+            <tr>
+              <td>Geritt Fröhlich</td>
+              <td>Flöte</td>
+            </tr>
+            <tr>
+              <td>Prof. Alexander Vitlin</td>
+              <td>Klavier</td>
+            </tr>
+            <tr>
+              <td>H.-J. Scheitzbach</td>
+              <td>Moderation und Violoncello</td>
+            </tr>
+          </table>
+          <p>ab 18:00 Uhr Maibowle und ein kleines Buffet zum Saisonende</p>
+        </div>
         <a href="#">Konzertprogramm</a>
       </article>
       <h3>Die aktuelle Ausgabe der Wetterfahne</h3>
       <a href="#">Wetterfahne xx</a>
+      <a href="#">Wetterfahnen-Archiv</a>
     </section>
-    <section class="lage">
-      <img src="./resources/images/lageplan.jpeg" />
-      <address>
+    <section class="lage flex">
+      <div class="txt-box">
+        <address>
         Evangelische Dorfkirche Alt-Staaken
         Hauptstrasse 12 /
         Ecke Nennhauser Damm 72
         13591 Berlin
         Tel. 030 3632603
       </address>
-      <div>
-        Verkehrsverbindungen: BUS M32 ab Rathaus Spandau bis Hauptstr. BUS M37 ab Rathaus Spandau bis Hahneberg BUS 149 ab Zoo bis Hahneberg BUS X49 ab S Messe Nord / ICC bis Hahneberg
+        <p>
+          Verkehrsverbindungen: BUS M32 ab Rathaus Spandau bis Hauptstr. BUS M37 ab Rathaus Spandau bis Hahneberg BUS 149 ab Zoo bis Hahneberg BUS X49 ab S Messe Nord / ICC bis Hahneberg
+        </p>
+      </div>
+      <div class="img.box">
+        <img src="./resources/images/lageplan.jpeg" />
       </div>
     </section>
   </main>

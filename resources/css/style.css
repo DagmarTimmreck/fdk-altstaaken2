@@ -1,48 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-size: 16px;
+  font-size: 20px;
+  background-color: #F6F6F6;
 }
 
 header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 4rem;
-  background-color: yellow;
+  height: 6rem;
+  padding: 0.5rem 1rem;
+  background-color: #8BEDC3;
 }
 
 .logo-group {
   display: flex;
   align-items: center;
+  flex-shrink: 2;
 }
 .logo-group span {
   display: block;
+  font-size: 1.5rem;
 }
 .logo-group img {
-  height: 4rem;
+  height: 5rem;
+  padding-right: 1rem;
 }
 
 nav {
   display: block;
 }
 
-main {
+nav a {
+  padding-left: 1rem;
+  color: #6C5E6B;
+}
+
+main, footer {
   position: relative;
-  top: 4rem;
+  top: 6rem; /* offset fixed header */
 }
 
 .flex {
   display: flex;
+  padding: 1rem 4rem;
+}
+
+.willkommen .img-box {
+  flex-basis: 30rem;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .willkommen img {
-  width: 40%;
+  width: 100%;
   height: auto;
 }
 
-.willkommen txt-box {
-  width: 60%;
+.txt-box {
+  flex-basis: 40rem;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+
+h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.aktuell {
+  padding: 2rem 3rem;
+  background-color: #8BEDC3;
+}
+
+.konzert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.konzert .txt-box {
+  flex-basis: auto;
+  padding: 1rem 3rem;
+}
+
+.termin {
+  width: 8rem;
+  height: 8rem;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+.datum-tag {
+  font-size: 2rem;
+}
+
+table {
+  margin-top: 1rem;
+}
+td {
+  padding: 0 1rem;
 }
