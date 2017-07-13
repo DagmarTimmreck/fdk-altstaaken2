@@ -1,134 +1,134 @@
-* {
-  box-sizing: border-box;
+html {
+  font-size: 18px;
+  font-family: "Arial", "Helvetica", "Univers", "Zurich BT", sans-serif;
 }
 
-html {
-  font-size: 20px;
-  background-color: #F6F6F6;
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50rem;
+  margin: 0 auto;
+  background-image: url("../images/Background.gif")
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
   width: 100%;
-  height: 6rem;
-  padding: 0.5rem 1rem;
-  background-color: #8BEDC3;
+  margin: 1.25rem 0;
 }
 
-.logo-group {
-  display: flex;
-  align-items: center;
-  flex-shrink: 2;
+.banner {
+  width: 30rem;
 }
-.logo-group span {
+
+h1 {
+  box-sizing: border-box;
   display: block;
-  font-size: 1.5rem;
-}
-.logo-group img {
   height: 5rem;
-  padding-right: 1rem;
+  padding: 1rem;
+  border: 0.5rem ridge darkgoldenrod;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  }
+
+
+h2 {
+  padding-top: 0.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 nav {
+  width: 10rem;
+}
+
+.btn {
+  box-sizing: border-box;
   display: block;
+  padding: 0.5rem;
+  border: 0.5rem ridge darkgoldenrod;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  transition: all 1s;
 }
 
-nav a {
-  padding-left: 1rem;
-  color: #6C5E6B;
+.btn:hover, .btn:focus {
+  background-color: gold;
+  text-decoration: underline;
+  outline: none;
 }
 
-main, footer {
-  position: relative;
-  top: 6rem; /* offset fixed header */
+.active {
+  background-color: goldenrod;
 }
 
-.flex {
-  display: flex;
-  padding: 1rem 4rem;
-}
-
-.willkommen .img-box {
-  flex-basis: 30rem;
-  flex-grow: 1;
-  overflow: hidden;
-}
-
-.willkommen img {
+nav img {
   width: 100%;
   height: auto;
 }
 
-.txt-box {
-  flex-basis: 40rem;
-  padding: 2rem;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-h2 {
-  margin-top: 0;
-  font-size: 2rem;
-  text-align: center;
-}
-
-h3 {
-  margin: 0;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-h4 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-
-h5 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.aktuell {
-  padding: 2rem 3rem;
-  background-color: #8BEDC3;
-}
-
-.konzert {
+main {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  width: 40rem;
+}
+
+main .img-container {
+  width: 30rem;
+}
+
+#wandbild {
+  width: 30rem;
+  height: 26.5rem;
+  padding: 2rem 3rem 0 3rem;
+}
+
+.img-col {
+  width: 5rem;
+  margin-left: 4rem;
+}
+
+#wetterfahne {
+  width: 5rem;
+  height: 6.25rem;
+}
+
+#plakette {
+  width: 5rem;
+  height: 7.5rem;
+}
+
+footer {
+  display: flex;
+}
+
+footer .img-container {
+  width: 10rem;
+}
+
+#dorfkirche {
+  width: 10rem;
+  height: 15rem;
+}
+
+footer nav {
+  display: flex;
+  flex-flow: wrap;
+  align-content: flex-start;
   justify-content: center;
+  width: 30rem;
+  padding-top: 2rem;
 }
 
-.konzert .txt-box {
-  flex-basis: auto;
-  padding: 1rem 3rem;
-}
-
-.termin {
-  width: 8rem;
-  height: 8rem;
-  line-height: 1.5;
-  text-align: center;
-  background-color: #F6F6F6;
-}
-
-.datum-tag {
-  font-size: 2rem;
-}
-
-table {
-  margin-top: 1rem;
-}
-td {
-  padding: 0 1rem;
+footer a {
+  height: auto;
+  padding: 0.25rem;
 }
